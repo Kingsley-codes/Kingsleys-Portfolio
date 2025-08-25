@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { motion } from "motion/react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { CldImage } from "next-cloudinary";
 
 export function HeroSection() {
   const handleScrollToAbout = () => {
@@ -27,15 +28,22 @@ export function HeroSection() {
             transition={{ duration: 0.8 }}
             className="lg:col-span-2 space-y-8"
           >
-            <motion.h2></motion.h2>
-
-            <motion.h1
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl"
+            <motion.h2
+              className="text-2xl sm:text-3xl lg:text-4xl"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              Hi, I'm <span className="text-primary">Agbam Kingsley</span>
+              Hi! I&apos;m
+            </motion.h2>
+
+            <motion.h1
+              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-primary"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              Agbam Kingsley
             </motion.h1>
 
             <motion.h2
@@ -53,9 +61,10 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              Passionate about creating modern, scalable web applications using
-              React, Next.js, Express.js, and MongoDB. I bring ideas to life
-              through clean code and intuitive user experiences.
+              I&apos;m passionate about creating modern, scalable web
+              applications using React, Next.js, Express.js, and MongoDB. I
+              bring ideas to life through clean code and intuitive user
+              experiences.
             </motion.p>
 
             <motion.div
@@ -128,10 +137,13 @@ export function HeroSection() {
           >
             <div className="relative">
               <div className="w-80 h-96 lg:w-72 lg:h-80 xl:w-80 xl:h-96 rounded-2xl overflow-hidden shadow-2xl">
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1731951039706-0e793240bb32?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NTYwNzQ4NDJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                <CldImage
+                  src="ps2n3rhl8qzsxuvokgzy"
                   alt="Agbam Kingsley - Full Stack Developer"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
+                  width={400}
+                  height={500}
+                  sizes="(max-width: 1024px) 288px, 320px"
                 />
               </div>
 
