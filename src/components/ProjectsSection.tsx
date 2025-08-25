@@ -6,73 +6,101 @@ import { Badge } from "./ui/badge";
 import { motion } from "motion/react";
 import { ExternalLink, Github } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { CldImage } from "next-cloudinary";
+import { FiGithub } from "react-icons/fi";
+import Link from "next/link";
 
 export function ProjectsSection() {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React, Next.js, Express.js, and MongoDB. Features include user authentication, shopping cart, payment integration, and admin dashboard.",
-      image: "ecommerce website",
-      technologies: ["React", "Next.js", "Express.js", "MongoDB", "Stripe", "Tailwind CSS"],
-      githubUrl: "#",
-      liveUrl: "#",
-      featured: true
+      title: "Forever: An E-Commerce Platform",
+      image: "pv3zoet7pkq44fgieqdv",
+      description:
+        "A full-stack e-commerce solution built with React, Express.js, and MongoDB. Features include user authentication, shopping cart, payment integration, and admin dashboard.",
+      technologies: [
+        "React",
+        "Express.js",
+        "MongoDB",
+        "Stripe",
+        "Tailwind CSS",
+      ],
+      githubUrl: "https://github.com/Kingsley-codes/forever-ecommerce",
+      liveUrl: "https://forever-ecommerce-ns8g.onrender.com",
+      featured: true,
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features. Built with the MERN stack.",
-      image: "task management app",
-      technologies: ["React", "Express.js", "MongoDB", "Socket.io", "Material-UI"],
-      githubUrl: "#",
-      liveUrl: "#",
-      featured: true
+      title: "Drivenest: A car rental and sales website",
+      image: "zzgpwd28cjwnhn7taybp",
+      description:
+        "A full-stack platform for sales and rental of luxury and regular cars. built with Next.js, Express.js, and MongoDB. Features include user authentication, shopping cart, payment integration, and admin dashboard.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "Express.js",
+        "MongoDB",
+        "Tailwind CSS",
+        "Stripe",
+      ],
+      githubUrl: "https://github.com/Kingsley-codes/drivenest",
+      liveUrl: "https://drivenest-se33.onrender.com",
+      featured: true,
     },
     {
       id: 3,
-      title: "Blog CMS",
-      description: "A content management system for bloggers with rich text editing, image uploads, and SEO optimization. Features admin panel and user roles.",
-      image: "blog cms dashboard",
-      technologies: ["Next.js", "TypeScript", "MongoDB", "Prisma", "TinyMCE"],
-      githubUrl: "#",
-      liveUrl: "#",
-      featured: false
+      title: "LamaLog: Blog CMS",
+      image: "dxrlqtdij7ij4xlq6uc0",
+      description:
+        "A content management system for bloggers with rich text editing, image uploads, and SEO optimization. Features admin panel and user roles.",
+      technologies: ["Next.js", "TypeScript", "MongoDB", "Express.js"],
+      githubUrl: "https://github.com/Kingsley-codes/blog",
+      liveUrl: "https://blog-mtrs.onrender.com",
+      featured: false,
     },
     {
       id: 4,
-      title: "Weather Dashboard",
-      description: "A responsive weather application that displays current weather and forecasts for multiple cities. Includes geolocation and search functionality.",
-      image: "weather dashboard",
+      title: "NGO Website",
+      image: "s1mivkwemckrcextnqan",
+      description:
+        "An NGO donation website that uses paystack for payment functionality.",
       technologies: ["React", "OpenWeather API", "Chart.js", "CSS3"],
-      githubUrl: "#",
-      liveUrl: "#",
-      featured: false
+      githubUrl: "https://github.com/Kingsley-codes/thrive",
+      liveUrl: "https://help-a-child-africa.onrender.com",
+      featured: false,
     },
     {
       id: 5,
       title: "Social Media API",
-      description: "RESTful API for a social media platform with user authentication, posts, comments, likes, and follow functionality. Built with Express.js and MongoDB.",
-      image: "api documentation",
+      image: "zftpojxppfd4yckve3wd",
+      description:
+        "RESTful API for a social media platform with user authentication, posts, comments, likes, and follow functionality. Built with Express.js and MongoDB.",
       technologies: ["Express.js", "MongoDB", "JWT", "Multer", "Postman"],
-      githubUrl: "#",
+      githubUrl: "https://github.com/Kingsley-codes/ifbsocial",
       liveUrl: "#",
-      featured: false
+      featured: false,
     },
     {
       id: 6,
       title: "Real Estate Platform",
-      description: "A property listing platform with advanced search filters, map integration, and property comparison features. Includes agent dashboard and inquiry system.",
-      image: "real estate website",
-      technologies: ["React", "Next.js", "MongoDB", "Google Maps API", "Cloudinary"],
+      description:
+        "A property listing platform with advanced search filters, map integration, and property comparison features. Includes agent dashboard and inquiry system.",
+      technologies: [
+        "React",
+        "Next.js",
+        "MongoDB",
+        "Google Maps API",
+        "Cloudinary",
+      ],
+      image: "hz0psjeydfhivfurmw1z",
       githubUrl: "#",
       liveUrl: "#",
-      featured: false
-    }
+      featured: false,
+    },
   ];
 
-  const featuredProjects = projects.filter(project => project.featured);
-  const otherProjects = projects.filter(project => !project.featured);
+  const featuredProjects = projects.filter((project) => project.featured);
+  const otherProjects = projects.filter((project) => !project.featured);
 
   return (
     <section id="projects" className="py-20 bg-muted/20">
@@ -88,7 +116,8 @@ export function ProjectsSection() {
             My <span className="text-primary">Projects</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Here are some of the projects I've worked on, showcasing my skills in full-stack development.
+            Here are some of the projects I've worked on, showcasing my skills
+            in full-stack development.
           </p>
         </motion.div>
 
@@ -114,27 +143,40 @@ export function ProjectsSection() {
               >
                 <Card className="overflow-hidden hover:shadow-lg transition-shadow group">
                   <div className="aspect-video relative overflow-hidden">
-                    <ImageWithFallback
-                      src={`https://images.unsplash.com/featured/?${project.image}&w=600&h=400&fit=crop`}
+                    <CldImage
+                      src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      width={600}
+                      height={400}
+                      // sizes="(max-width: 1024px) 288px, 320px"
                     />
                   </div>
                   <CardHeader>
                     <CardTitle className="flex items-center justify-between">
                       {project.title}
                       <div className="flex gap-2">
-                        <Button variant="ghost" size="icon" className="hover:text-primary">
-                          <Github className="h-4 w-4" />
+                        <Button
+                          variant="ghost"
+                          size="icon"
+                          className="hover:text-primary"
+                        >
+                          <FiGithub className="h-4 w-4" />
                         </Button>
-                        <Button variant="ghost" size="icon" className="hover:text-primary">
+                        <Button
+                          variant="ghost"
+                          size="icon"
+                          className="hover:text-primary"
+                        >
                           <ExternalLink className="h-4 w-4" />
                         </Button>
                       </div>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground mb-4">{project.description}</p>
+                    <p className="text-muted-foreground mb-4">
+                      {project.description}
+                    </p>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech, techIndex) => (
                         <Badge key={techIndex} variant="secondary">
@@ -171,33 +213,51 @@ export function ProjectsSection() {
               >
                 <Card className="h-full hover:shadow-lg transition-shadow group">
                   <div className="aspect-video relative overflow-hidden">
-                    <ImageWithFallback
-                      src={`https://images.unsplash.com/featured/?${project.image}&w=400&h=250&fit=crop`}
+                    <CldImage
+                      src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      width={400}
+                      height={250}
                     />
                   </div>
                   <CardHeader className="pb-2">
                     <CardTitle className="text-lg flex items-center justify-between">
                       {project.title}
                       <div className="flex gap-2">
-                        <Button variant="ghost" size="icon" className="hover:text-primary h-8 w-8">
-                          <Github className="h-3 w-3" />
+                        <Button
+                          variant="ghost"
+                          size="icon"
+                          className="hover:text-primary h-8 w-8"
+                        >
+                          <FiGithub className="h-3 w-3" />
                         </Button>
-                        <Button variant="ghost" size="icon" className="hover:text-primary h-8 w-8">
+                        <Button
+                          variant="ghost"
+                          size="icon"
+                          className="hover:text-primary h-8 w-8"
+                        >
                           <ExternalLink className="h-3 w-3" />
                         </Button>
                       </div>
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground text-sm mb-3 line-clamp-3">{project.description}</p>
+                    <p className="text-muted-foreground text-sm mb-3 line-clamp-3">
+                      {project.description}
+                    </p>
                     <div className="flex flex-wrap gap-1">
-                      {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                        <Badge key={techIndex} variant="secondary" className="text-xs">
-                          {tech}
-                        </Badge>
-                      ))}
+                      {project.technologies
+                        .slice(0, 3)
+                        .map((tech, techIndex) => (
+                          <Badge
+                            key={techIndex}
+                            variant="secondary"
+                            className="text-xs"
+                          >
+                            {tech}
+                          </Badge>
+                        ))}
                       {project.technologies.length > 3 && (
                         <Badge variant="secondary" className="text-xs">
                           +{project.technologies.length - 3}
@@ -218,10 +278,15 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Button variant="outline" size="lg" className="px-8">
-            <Github className="h-4 w-4 mr-2" />
-            View More on GitHub
-          </Button>
+          <Link
+            href="https://github.com/Kingsley-codes?tab=repositories"
+            target="_blank"
+          >
+            <Button variant="outline" size="lg" className="px-8">
+              <FiGithub className="h-4 w-4 mr-2" />
+              View More on GitHub
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>

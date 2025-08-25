@@ -47,6 +47,7 @@ export function AboutSection() {
     "ShadCN",
     "Git",
     "REST APIs",
+    "GraphQL",
   ];
 
   return (

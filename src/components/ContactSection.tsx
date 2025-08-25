@@ -13,14 +13,16 @@ export function ContactSection() {
     name: "",
     email: "",
     subject: "",
-    message: ""
+    message: "",
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -33,7 +35,7 @@ export function ContactSection() {
       name: "",
       email: "",
       subject: "",
-      message: ""
+      message: "",
     });
   };
 
@@ -41,21 +43,21 @@ export function ContactSection() {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "Email",
-      content: "agbam.kingsley@email.com",
-      action: "mailto:agbam.kingsley@email.com"
+      content: "agbamkingsley@gmail.com",
+      action: "mailto:agbamkingsley@gmail.com",
     },
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Phone",
-      content: "+234 (0) 123 456 7890",
-      action: "tel:+2341234567890"
+      content: "+234 (0) 813 403 8304",
+      action: "tel:+2348134038304",
     },
     {
       icon: <MapPin className="h-6 w-6" />,
       title: "Location",
       content: "Lagos, Nigeria",
-      action: "#"
-    }
+      action: "#",
+    },
   ];
 
   return (
@@ -72,7 +74,8 @@ export function ContactSection() {
             Get In <span className="text-primary">Touch</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            I'm always open to discussing new opportunities, interesting projects, or just having a chat about web development.
+            I'm always open to discussing new opportunities, interesting
+            projects, or just having a chat about web development.
           </p>
         </motion.div>
 
@@ -88,8 +91,9 @@ export function ContactSection() {
               <div>
                 <h3 className="text-2xl mb-6">Let's Connect</h3>
                 <p className="text-muted-foreground mb-8">
-                  Whether you have a project in mind, need technical consultation, or just want to say hello, 
-                  I'd love to hear from you. Let's build something amazing together!
+                  Whether you have a project in mind, need technical
+                  consultation, or just want to say hello, I'd love to hear from
+                  you. Let's build something amazing together!
                 </p>
               </div>
 
@@ -108,7 +112,7 @@ export function ContactSection() {
                           <div className="text-primary">{info.icon}</div>
                           <div>
                             <h4 className="mb-1">{info.title}</h4>
-                            <a 
+                            <a
                               href={info.action}
                               className="text-muted-foreground hover:text-primary transition-colors"
                             >
@@ -132,11 +136,14 @@ export function ContactSection() {
                   <CardContent className="p-6">
                     <h4 className="mb-3">Quick Response</h4>
                     <p className="text-muted-foreground mb-4">
-                      I typically respond to emails within 24 hours. For urgent matters, feel free to call or send a message on LinkedIn.
+                      I typically respond to emails within 1-2 hours. For urgent
+                      matters, feel free to call or send a message on LinkedIn.
                     </p>
                     <div className="flex gap-2">
                       <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-                      <span className="text-sm text-muted-foreground">Available for new projects</span>
+                      <span className="text-sm text-muted-foreground">
+                        Available for new projects
+                      </span>
                     </div>
                   </CardContent>
                 </Card>
@@ -186,7 +193,7 @@ export function ContactSection() {
                       />
                     </div>
                   </div>
-                  
+
                   <div>
                     <label htmlFor="subject" className="block mb-2">
                       Subject
@@ -200,7 +207,7 @@ export function ContactSection() {
                       required
                     />
                   </div>
-                  
+
                   <div>
                     <label htmlFor="message" className="block mb-2">
                       Message
@@ -215,7 +222,7 @@ export function ContactSection() {
                       required
                     />
                   </div>
-                  
+
                   <Button type="submit" className="w-full" size="lg">
                     <Send className="h-4 w-4 mr-2" />
                     Send Message

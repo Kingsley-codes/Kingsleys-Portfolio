@@ -1,10 +1,11 @@
 "use client";
 
 import { Button } from "./ui/button";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Mail } from "lucide-react";
 import { motion } from "motion/react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { CldImage } from "next-cloudinary";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
+import Link from "next/link";
 
 export function HeroSection() {
   const handleScrollToAbout = () => {
@@ -84,6 +85,7 @@ export function HeroSection() {
               >
                 View My Work
               </Button>
+
               <Button
                 variant="outline"
                 size="lg"
@@ -104,27 +106,38 @@ export function HeroSection() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 1.0 }}
             >
-              <Button
-                variant="ghost"
-                size="icon"
-                className="hover:text-primary"
+              <Link href="https://github.com/Kingsley-codes" target="_blank">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="hover:text-primary"
+                >
+                  <FiGithub className="h-6 w-6 text-red-500" />
+                </Button>
+              </Link>
+
+              <Link
+                href="https://www.linkedin.com/in/kingsley-agbam"
+                target="_blank"
               >
-                <Github className="h-6 w-6" />
-              </Button>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="hover:text-primary"
-              >
-                <Linkedin className="h-6 w-6" />
-              </Button>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="hover:text-primary"
-              >
-                <Mail className="h-6 w-6" />
-              </Button>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="hover:text-primary"
+                >
+                  <FiLinkedin className="h-6 w-6 text-red-500" />
+                </Button>
+              </Link>
+
+              <Link href="mailto:agbamkingsley@gmail.com" target="_blank">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="hover:text-primary"
+                >
+                  <Mail className="h-6 w-6 text-red-500" />
+                </Button>
+              </Link>
             </motion.div>
           </motion.div>
 
