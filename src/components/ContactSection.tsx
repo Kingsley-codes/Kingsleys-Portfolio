@@ -74,7 +74,7 @@ export function ContactSection() {
             Get In <span className="text-primary">Touch</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            I'm always open to discussing new opportunities, interesting
+            I&apos;m always open to discussing new opportunities, interesting
             projects, or just having a chat about web development.
           </p>
         </motion.div>
@@ -89,11 +89,11 @@ export function ContactSection() {
           >
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl mb-6">Let's Connect</h3>
+                <h3 className="text-2xl mb-6">Let&apos;s Connect</h3>
                 <p className="text-muted-foreground mb-8">
                   Whether you have a project in mind, need technical
-                  consultation, or just want to say hello, I'd love to hear from
-                  you. Let's build something amazing together!
+                  consultation, or just want to say hello, I&apos;d love to hear
+                  from you. Let&apos;s build something amazing together!
                 </p>
               </div>
 

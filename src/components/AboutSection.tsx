@@ -64,9 +64,9 @@ export function AboutSection() {
             About <span className="text-primary">Me</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            I'm a passionate full stack web developer with expertise in modern
-            web technologies. I love turning complex problems into simple,
-            beautiful, and intuitive solutions.
+            I&apos;m a passionate full stack web developer with expertise in
+            modern web technologies. I love turning complex problems into
+            simple, beautiful, and intuitive solutions.
           </p>
         </motion.div>
 
@@ -88,7 +88,7 @@ export function AboutSection() {
                   systems with Express.js and MongoDB.
                 </p>
                 <p className="text-muted-foreground mb-6">
-                  I'm passionate about writing clean, maintainable code and
+                  I&apos;m passionate about writing clean, maintainable code and
                   staying up-to-date with the latest web development trends and
                   best practices. I believe in the power of technology to solve
                   real-world problems and create meaningful user experiences.

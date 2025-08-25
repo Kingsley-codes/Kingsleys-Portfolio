@@ -4,8 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { motion } from "motion/react";
-import { ExternalLink, Github } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ExternalLink } from "lucide-react";
 import { CldImage } from "next-cloudinary";
 import { FiGithub } from "react-icons/fi";
 import Link from "next/link";
@@ -116,8 +115,8 @@ export function ProjectsSection() {
             My <span className="text-primary">Projects</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Here are some of the projects I've worked on, showcasing my skills
-            in full-stack development.
+            Here are some of the projects I&apos;ve worked on, showcasing my
+            skills in full-stack development.
           </p>
         </motion.div>
 

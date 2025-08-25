@@ -127,7 +127,7 @@ export function TestimonialsSection() {
           <Quote className="w-8 h-8 text-primary/20 mb-4" />
 
           <blockquote className="text-muted-foreground mb-6 flex-grow italic">
-            "{testimonial.testimonial}"
+            &quot;{testimonial.testimonial}&quot;
           </blockquote>
 
           <div className="flex items-center mt-auto">
@@ -169,8 +169,8 @@ export function TestimonialsSection() {
             Client <span className="text-primary">Testimonials</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Don't just take my word for it. Here's what clients say about
-            working with me and the results we've achieved together.
+            Don&apos;t just take my word for it. Here&apos;s what clients say
+            about working with me and the results we&apos;ve achieved together.
           </p>
         </motion.div>
 
@@ -254,9 +254,9 @@ export function TestimonialsSection() {
             <CardContent className="p-0">
               <h3 className="text-2xl mb-4">Ready to Work Together?</h3>
               <p className="text-muted-foreground mb-6 max-w-md">
-                Join these satisfied clients and let's build something amazing
-                together. I'm committed to delivering exceptional results on
-                every project.
+                Join these satisfied clients and let&apos;s build something
+                amazing together. I&apos;m committed to delivering exceptional
+                results on every project.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button

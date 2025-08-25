@@ -1,7 +1,6 @@
 "use client";
 
 import { Card, CardContent } from "./ui/card";
-import { Progress } from "./ui/progress";
 import { motion } from "motion/react";
 import { RiTailwindCssFill } from "react-icons/ri";
 
