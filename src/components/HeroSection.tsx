@@ -1,187 +1,66 @@
-"use client";
+import { FiArrowDown, FiDownload, FiCode } from "react-icons/fi";
 
-import { Button } from "./ui/button";
-import { ArrowDown, Mail } from "lucide-react";
-import { motion } from "motion/react";
-import { CldImage } from "next-cloudinary";
-import { FiGithub, FiLinkedin } from "react-icons/fi";
-import Link from "next/link";
-
-export function HeroSection() {
-  const handleScrollToAbout = () => {
-    const element = document.querySelector("#about");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
+export default function HeroSection() {
   return (
-    <section
-      id="home"
-      className="pt-16 min-h-screen flex items-center justify-center relative bg-gradient-to-br from-background to-accent/20"
-    >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-center">
-          {/* Text Content - Takes 2/3 of the space */}
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="lg:col-span-2 space-y-8"
-          >
-            <motion.h2
-              className="text-2xl sm:text-3xl lg:text-4xl"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              Hi! I&apos;m
-            </motion.h2>
+    <section className="max-w-6xl mx-auto px-6 py-20 md:py-32">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="lg:col-span-8 space-y-8">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-wider">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+            </span>
+            Available for new projects
+          </div>
 
-            <motion.h1
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-primary"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-            >
-              Agbam Kingsley
-            </motion.h1>
+          <h1 className="text-5xl md:text-7xl text-gray-200 font-bold leading-[1.1] tracking-tight">
+            Engineering scalable{" "}
+            <span className="text-gradient">full-stack</span> solutions.
+          </h1>
 
-            <motion.h2
-              className="text-xl sm:text-2xl lg:text-3xl text-muted-foreground"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-            >
-              Full Stack Web Developer
-            </motion.h2>
+          <p className="text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed">
+            I build high-performance web applications using{" "}
+            <span className="text-white border-b border-accent-gold">
+              Next.js
+            </span>{" "}
+            and{" "}
+            <span className="text-white border-b border-primary">Express</span>.
+            Focused on architectural integrity and seamless user experiences.
+          </p>
 
-            <motion.p
-              className="text-lg text-muted-foreground max-w-2xl"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
-              I&apos;m passionate about creating modern, scalable web
-              applications using React, Next.js, Express.js, and MongoDB. I
-              bring ideas to life through clean code and intuitive user
-              experiences.
-            </motion.p>
-
-            <motion.div
-              className="flex flex-col sm:flex-row gap-4"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.8 }}
-            >
-              <Button
-                size="lg"
-                className="px-8 py-3"
-                onClick={() =>
-                  document
-                    .querySelector("#projects")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                View My Work
-              </Button>
-
-              <Button
-                variant="outline"
-                size="lg"
-                className="px-8 py-3"
-                onClick={() =>
-                  document
-                    .querySelector("#contact")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                Get In Touch
-              </Button>
-            </motion.div>
-
-            <motion.div
-              className="flex space-x-6"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.0 }}
-            >
-              <Link href="https://github.com/Kingsley-codes" target="_blank">
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="hover:text-primary"
-                >
-                  <FiGithub className="h-6 w-6 text-red-500" />
-                </Button>
-              </Link>
-
-              <Link
-                href="https://www.linkedin.com/in/kingsley-agbam"
-                target="_blank"
-              >
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="hover:text-primary"
-                >
-                  <FiLinkedin className="h-6 w-6 text-red-500" />
-                </Button>
-              </Link>
-
-              <Link href="mailto:agbamkingsley@gmail.com" target="_blank">
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="hover:text-primary"
-                >
-                  <Mail className="h-6 w-6 text-red-500" />
-                </Button>
-              </Link>
-            </motion.div>
-          </motion.div>
-
-          {/* Developer Image - Takes 1/3 of the space */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="lg:col-span-1 flex justify-center lg:justify-end"
-          >
-            <div className="relative">
-              <div className="w-80 h-96 lg:w-72 lg:h-80 xl:w-80 xl:h-96 rounded-2xl overflow-hidden shadow-2xl">
-                <CldImage
-                  src="ps2n3rhl8qzsxuvokgzy"
-                  alt="Agbam Kingsley - Full Stack Developer"
-                  className="w-full h-full object-cover object-top"
-                  width={400}
-                  height={500}
-                  sizes="(max-width: 1024px) 288px, 320px"
-                />
-              </div>
-
-              {/* Subtle background accent */}
-              <div className="absolute -inset-4 bg-primary/5 rounded-2xl -z-10"></div>
-            </div>
-          </motion.div>
+          <div className="flex flex-wrap gap-4 pt-4">
+            <button className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-primary/20 flex items-center gap-2">
+              View Projects <FiArrowDown />
+            </button>
+            <button className="bg-white/5 hover:bg-white/10 border border-white/10 px-8 py-4 rounded-xl font-bold transition-all flex items-center gap-2">
+              Download CV <FiDownload />
+            </button>
+          </div>
         </div>
 
-        {/* Scroll indicator */}
-        <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 1.2 }}
-        >
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={handleScrollToAbout}
-            className="animate-bounce hover:text-primary"
-          >
-            <ArrowDown className="h-6 w-6" />
-          </Button>
-        </motion.div>
+        <div className="lg:col-span-4 hidden lg:block">
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-gradient-to-r from-primary to-accent-gold rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+            <div className="relative bg-card-dark p-6 rounded-xl border border-white/10 aspect-square flex flex-col justify-between">
+              <div className="flex justify-between items-start">
+                <FiCode className="text-primary text-4xl" />
+                <span className="text-xs font-mono text-slate-500">v4.2.0</span>
+              </div>
+
+              <div className="space-y-4">
+                <div className="h-2 w-3/4 bg-white/10 rounded-full"></div>
+                <div className="h-2 w-1/2 bg-white/10 rounded-full"></div>
+                <div className="h-2 w-5/6 bg-white/10 rounded-full"></div>
+              </div>
+
+              <div className="text-sm font-mono text-accent-gold">
+                const Kingsley = () =&gt; {"{"} <br />
+                &nbsp;&nbsp;return &lt;FullStack /&gt;; <br />
+                {"}"}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
