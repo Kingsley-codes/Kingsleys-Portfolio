@@ -63,4 +63,8 @@
   .border-accent-gold {
     border-color: var(--accent-gold);
   }
+
+  .shadow-gradient {
+    box-shadow: 0 4px 15px rgba(44, 155, 140), 0 0 20px rgba(233, 196, 106);
+  }
 }
