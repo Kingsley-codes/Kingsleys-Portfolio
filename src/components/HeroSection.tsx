@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { FiArrowDown, FiDownload, FiCode } from "react-icons/fi";
 
 export default function HeroSection() {

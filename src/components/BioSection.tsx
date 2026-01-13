@@ -21,18 +21,18 @@ export default function BioSection() {
           build tools that are not only functional but delightful to use.
         </p>
         <p className="text-base md:text-lg leading-relaxed md:leading-normal">
-          Over the years, I've mastered the{" "}
+          Over the years, I&apos;ve mastered the{" "}
           <span className="text-gradient font-semibold">MERN stack</span> and
           specialized in{" "}
           <span className="text-gradient font-semibold">Next.js</span>,
           embracing the shift towards server-side rendering and edge computing.
-          I believe that a developer's job isn't just to write code, but to
-          solve human problems through technology.
+          I believe that a developer&apos;s job isn&apos;t just to write code,
+          but to solve human problems through technology.
         </p>
         <p className="text-base md:text-lg leading-relaxed md:leading-normal">
-          When I'm not in front of a screen, you'll find me exploring the latest
-          in UI design trends or contributing to open-source projects that lower
-          the barrier for new developers entering the field.
+          When I&apos;m not in front of a screen, you&apos;ll find me exploring
+          the latest in UI design trends or contributing to open-source projects
+          that lower the barrier for new developers entering the field.
         </p>
       </div>
     </div>
