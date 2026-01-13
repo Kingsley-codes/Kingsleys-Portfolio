@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FiArrowDown, FiDownload, FiCode } from "react-icons/fi";
 
 export default function HeroSection() {
@@ -27,9 +28,17 @@ export default function HeroSection() {
             <button className="bg-primary hover:bg-[#2c9b8c]/90 text-white px-8 py-4 rounded-xl font-bold transition-all shadow-lg shadow-primary/20 flex items-center gap-2">
               View Projects <FiArrowDown />
             </button>
-            <button className="bg-white/5 hover:bg-white/10 border border-white/10 px-8 py-4 rounded-xl text-gray-300 font-bold transition-all flex items-center gap-2">
-              Download CV <FiDownload />
-            </button>
+
+            <a
+              href="/AGBAM_KINGSLEY_fullstack_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+            >
+              <button className="bg-white/5 hover:bg-white/10 border border-white/10 px-8 py-4 rounded-xl text-gray-300 font-bold transition-all flex items-center gap-2">
+                Download CV <FiDownload />
+              </button>
+            </a>
           </div>
         </div>
 
