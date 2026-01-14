@@ -32,7 +32,7 @@ export default function Navigation() {
               </Link>
               <Link
                 className="hover:text-[#2c9b8c] transition-colors"
-                href="#projects"
+                href="/projects"
               >
                 Projects
               </Link>
@@ -44,7 +44,7 @@ export default function Navigation() {
               </Link>
               <Link
                 className="hover:text-[#2c9b8c] transition-colors"
-                href="#contact"
+                href="/contact"
               >
                 Contact
               </Link>

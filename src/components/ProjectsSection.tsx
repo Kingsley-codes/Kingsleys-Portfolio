@@ -1,28 +1,34 @@
-import {
-  FiLink,
-  FiCode,
-  FiArrowRight,
-  FiGrid,
-  FiShoppingBag,
-} from "react-icons/fi";
+import { FiLink, FiArrowRight } from "react-icons/fi";
 
 export default function ProjectsSection() {
   const projects = [
     {
-      title: "Vortex Enterprise SaaS",
+      title: "Meride Haven",
       description:
-        "A multi-tenant SaaS platform featuring real-time analytics, automated billing with Stripe, and advanced user permission systems.",
-      tags: ["Next.js", "PostgreSQL"],
-      gradient: "from-[#2c9b8c]/20 to-[#E9C46A]/20",
-      icon: <FiGrid className="text-6xl text-white/20" />,
+        "A premium transport and hospitality brand delivering private and corporate transportation, professional chauffeur services, secure escort support, and guest coordination with a focus on safety, comfort, and trust.",
+      tags: ["Next.js", "Express.js", "MongoDB", "Ercas API"],
+      imageUrl:
+        "https://res.cloudinary.com/dbeyl29fl/image/upload/v1768329379/itplrm6l3v9gmmrgyddg.png",
+      url: "https://meride-haven.com/",
+    },
+
+    {
+      title: "iDonatio",
+      description:
+        "A cashless donation platform that seamlessly connects donors and donees, enabling fast, secure giving and powerful donation management through an easy-to-use web and mobile experience.",
+      tags: ["Express", "Next.js", "MongoDB", "Paystack API"],
+      imageUrl:
+        "https://res.cloudinary.com/dbeyl29fl/image/upload/v1768329373/bmvzikmsfnurm2d92p20.png",
+      url: "https://www.idonatio.com/",
     },
     {
-      title: "Aura Marketplace",
+      title: "Forever E-commerce",
       description:
         "High-performance e-commerce engine with Redis caching, full-text search, and a custom-built headless CMS for content management.",
-      tags: ["Express", "Redis"],
-      gradient: "from-indigo-500/20 to-purple-500/20",
-      icon: <FiShoppingBag className="text-6xl text-white/20" />,
+      tags: ["Express", "React", "MongoDB", "Paystack API"],
+      imageUrl:
+        "https://res.cloudinary.com/dbeyl29fl/image/upload/v1768329372/x0iwhuhqolqwvw8296xw.png",
+      url: "https://forever-ecommerce-ns8g.onrender.com/",
     },
   ];
 
@@ -32,31 +38,35 @@ export default function ProjectsSection() {
         <h2 className="text-4xl font-bold">Selected Projects</h2>
         <a
           className="text-[#2c9b8c] font-bold flex items-center gap-2 hover:underline"
-          href="#"
+          href="/projects"
         >
-          View Archive <FiArrowRight className="text-sm" />
+          View All Projects <FiArrowRight className="text-sm" />
         </a>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
         {projects.map((project, index) => (
           <div key={index} className="group">
             <div className="relative overflow-hidden rounded-2xl bg-[#2B2B2B] aspect-video mb-6 border border-white/10">
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10 flex items-end p-8">
                 <div className="flex gap-4">
-                  <button className="bg-[#2c9b8c] text-white p-3 rounded-lg flex items-center justify-center">
-                    <FiLink />
-                  </button>
-                  <button className="bg-white/20 backdrop-blur-md text-white p-3 rounded-lg flex items-center justify-center">
-                    <FiCode />
-                  </button>
+                  <a
+                    href={project.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button className="bg-[#2c9b8c] text-white p-3 rounded-lg flex items-center justify-center">
+                      <FiLink />
+                    </button>
+                  </a>
                 </div>
               </div>
               <div
-                className={`w-full h-full bg-gradient-to-br ${project.gradient} flex items-center justify-center group-hover:scale-105 transition-transform duration-700`}
-              >
-                {project.icon}
-              </div>
+                className="w-full h-full bg-cover bg-center flex items-center justify-center group-hover:scale-105 transition-transform duration-700"
+                style={{
+                  backgroundImage: `url(${project.imageUrl})`,
+                }}
+              ></div>
             </div>
 
             <div className="flex flex-wrap gap-2 mb-4">
@@ -74,7 +84,7 @@ export default function ProjectsSection() {
               ))}
             </div>
 
-            <h3 className="text-2xl font-bold mb-2 group-hover:text-[#2c9b8c] transition-colors">
+            <h3 className="text-2xl font-bold text-gray-300 mb-2 group-hover:text-[#2c9b8c] transition-colors">
               {project.title}
             </h3>
             <p className="text-slate-400 leading-relaxed">
