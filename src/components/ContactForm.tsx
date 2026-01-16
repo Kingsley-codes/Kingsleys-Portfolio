@@ -28,13 +28,13 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="lg:col-span-7 bg-white dark:bg-surface-dark/50 backdrop-blur-sm border border-slate-200 dark:border-border-dark p-6 md:p-8 rounded-xl shadow-2xl">
+    <div className="lg:col-span-7 backdrop-blur-sm border border-slate-500 dark:border-border-dark p-6 md:p-8 rounded-xl shadow-2xl">
       <div className="mb-8">
         <span className="text-primary font-mono text-sm tracking-widest uppercase mb-2 block">
           Available for hire
         </span>
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-          Let's build something together.
+          Let&apos;s build something together.
         </h1>
         <p className="text-slate-500 dark:text-slate-400 max-w-md">
           Whether it&apos;s a new product from scratch or a scaling existing

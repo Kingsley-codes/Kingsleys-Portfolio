@@ -5,7 +5,7 @@ import VisualAccent from "@/components/VisualAccent";
 
 export default function ContactPage() {
   return (
-    <main className="flex-1 flex flex-col items-center justify-center py-8 md:py-12 px-4 md:px-6">
+    <main className="flex-1 flex flex-col items-center mt-10 justify-center py-8 md:py-18 px-4 md:px-6">
       <div className="max-w-[1100px] w-full grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 items-start">
         <ContactForm />
 
