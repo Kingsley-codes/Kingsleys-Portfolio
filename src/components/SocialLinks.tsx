@@ -5,17 +5,17 @@ export default function SocialLinks() {
   const socialLinks: SocialLink[] = [
     {
       name: "LinkedIn",
-      href: "#",
+      href: "https://www.linkedin.com/in/kingsley-agbam",
       icon: "link",
     },
     {
       name: "GitHub",
-      href: "#",
+      href: "https://github.com/Kingsley-codes",
       icon: "code",
     },
     {
       name: "Twitter / X",
-      href: "#",
+      href: "https://x.com/kingsley_agbam",
       icon: "share",
     },
   ];
@@ -43,7 +43,7 @@ export default function SocialLinks() {
           <a
             key={link.name}
             href={link.href}
-            className="flex items-center justify-between p-4 rounded-lg bg-slate-50 dark:bg-surface-dark border border-slate-200 dark:border-border-dark hover:border-primary/50 transition-all group"
+            className="flex items-center justify-between p-4 rounded-lg bg-gray-900 text-gray-300 dark:bg-surface-dark border border-slate-700 dark:border-border-dark hover:border-primary/50 transition-all group"
             target="_blank"
             rel="noopener noreferrer"
           >

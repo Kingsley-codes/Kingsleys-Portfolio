@@ -22,20 +22,20 @@ export default function ProjectsSection() {
       url: "https://www.idonatio.com/",
     },
     {
-      title: "Forever E-commerce",
+      title: "Task Gynie",
       description:
-        "High-performance e-commerce engine with Redis caching, full-text search, and a custom-built headless CMS for content management.",
-      tags: ["Express", "React", "MongoDB", "Paystack API"],
+        "A mission-driven service marketplace that connects customers with trusted local professionals for everyday household needs, helping women and families reclaim time, balance responsibilities, and enjoy peace of mind.",
+      tags: ["Express", "Next.js", "MongoDB", "Paystack API"],
       imageUrl:
-        "https://res.cloudinary.com/dbeyl29fl/image/upload/v1768329372/x0iwhuhqolqwvw8296xw.png",
-      url: "https://forever-ecommerce-ns8g.onrender.com/",
+        "https://res.cloudinary.com/dbeyl29fl/image/upload/v1768329374/fywjoumyw4yzlpola8l7.png",
+      url: "https://task-gynie.vercel.app",
     },
   ];
 
   return (
     <section className="max-w-6xl mx-auto px-6 py-32" id="projects">
       <div className="flex items-center justify-between mb-16 px-4">
-        <h2 className="text-4xl font-bold">Selected Projects</h2>
+        <h2 className="text-4xl text-primary font-bold">Selected Projects</h2>
         <a
           className="text-[#2c9b8c] font-bold flex items-center gap-2 hover:underline"
           href="/projects"

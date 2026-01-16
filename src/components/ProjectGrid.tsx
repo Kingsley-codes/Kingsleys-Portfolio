@@ -4,66 +4,100 @@ import { Project } from "@/types";
 const projects: Project[] = [
   {
     id: 1,
-    title: "E-commerce Nexus",
+    title: "Task Gynie",
     description:
-      "A high-performance storefront with real-time inventory synchronization, global payment orchestration, and an optimized server-side rendering pipeline.",
-    tags: ["Next.js", "Stripe", "PostgreSQL"],
+      "A mission-driven service marketplace that connects customers with trusted local professionals for everyday household needs, helping women and families reclaim time, balance responsibilities, and enjoy peace of mind.",
+    tags: ["Next.js", "Express.js", "MongoDB", "Paystack API"],
     imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuB28voWvs5o8KF_iibUtiWvtCdcc2xKsASJ0-LbAgMCmPKMAHebycXFfxU8T0psKZkyXkzsO7pfFyAlsC5OF-VikLUQuiKIrmY_v8HtDalOHlHh0d-kp78_YqOKXJozExkqHe9H5x6vPnjf_flmpNxoWXZ9bM1Wsf8OLJwDDArtcA0PrCCrRbz2B7p-6jOvkb9WoCrCWcSm9I5Ug2OKlc-DOPv8AAEwxx1_lOm7JfWOQn2ljrk2m1ytdMtyJ_TAiEabNLimInajrg",
+      "https://res.cloudinary.com/dbeyl29fl/image/upload/v1768329374/fywjoumyw4yzlpola8l7.png",
     featured: true,
     links: {
-      deployment: "#",
-      source: "#",
+      deployment: "https://task-gynie.vercel.app",
     },
-    type: "fullstack",
   },
   {
     id: 2,
-    title: "Analytics Core UI",
+    title: "Meride Haven",
     description:
-      "Visualizing complex data streams with custom D3 hooks and responsive Tailwind layouts.",
-    tags: ["React", "D3.js"],
+      "A premium transport and hospitality brand delivering private and corporate transportation, professional chauffeur services, secure escort support, and guest coordination with a focus on safety, comfort, and trust.",
+    tags: ["Next.js", "Express.js", "MongoDB", "Ercas API"],
     imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCDZB61DgC_dwRFcjbG4IAHS8JPc8KXpn1Rwk8ZFJ-pnJW8HAIPzMh4JKguRSAA7WoowJcQcVwZn5XYyZLxasu9wMZF-i7FnibDEaDXLjKb0nkIbNFMnj6iU2Do845YYBEn4jwVwXOl1ukYnZs18GQMzfJUc8wNdiObc-ph1WTZfs0gr96QbcPApwu1z9BM2wdfXyCE2JU9KQRj5QzcYigSptduGVDTQhF48VSmwnYillhLAY7kkC5ynedA3PGGKjNGL1ENLUQ2WQ",
+      "https://res.cloudinary.com/dbeyl29fl/image/upload/v1768329379/itplrm6l3v9gmmrgyddg.png",
     links: {
-      explore: "#",
+      deployment: "https://meride-haven.com",
     },
-    type: "frontend",
   },
   {
     id: 3,
-    title: "Microservice Gateway",
+    title: "iDonatio",
     description:
-      "Centralized authentication and rate-limiting gateway built for distributed architectures.",
-    tags: ["Node.js", "Redis"],
+      "A cashless donation platform that seamlessly connects donors and donees, enabling fast, secure giving and powerful donation management through an easy-to-use web and mobile experience.",
+    tags: ["Express", "Next.js", "MongoDB", "Paystack API"],
     imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuCUkTlLB-sgIxlPGiraCnjnyYVuwJhSG8KQsqxty4LFsjEEA_37ty-oncOCu9V5gWVkzbOp9lgEmCLKkKrbc_ujpgGnRN61ABjOm3lFI5eFF8LEXF2t6vRv5ShvDuYyfOUK6Xhhr0aO4adrbX2v_aXbvOIVwP7lnggx6YW6qzTBgHCnRAVif4oX7r4ivCzF5_O4yDuBBGGTnFh-unEcUFSBhmkNIwqM-NHhQbc7JywxSHm8lkkxuDUQYjjFpnT4Ht-Tch79c0HKxA",
+      "https://res.cloudinary.com/dbeyl29fl/image/upload/v1768329373/bmvzikmsfnurm2d92p20.png",
     links: {
-      documentation: "#",
+      deployment: "https://www.idonatio.com",
     },
-    type: "backend",
   },
   {
     id: 4,
-    title: "Protocol_X Chat",
+    title: "Forever E-commerce",
     description:
-      "Encrypted real-time communication platform utilizing WebSockets and modern encryption protocols.",
-    tags: ["Socket.io", "TypeScript"],
+      "High-performance e-commerce engine with Redis caching, full-text search, and a custom-built headless CMS for content management.",
+    tags: ["Express", "React", "MongoDB", "Paystack API"],
     imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBJgJ8Se00o5f6fV_raLDiZYX9Z7ypFcSKtoaC8LxZLHNIU-Zjgt0hAmA4PT2vE8jpWGiQSSlxRNjvcdMkrjAD8dNs1fbU2iFCRpVVLUpMEvVnbV8MdovZ04sen98h8bxpESw8oWKDNmIW2-OP1V2OrkMokfW2Qv8akCVnDRzbsaIH6pt8uBmlhl4ypEBgCO7aFUQadbltP3TDznR8AilvKA9Y6eXvyaI5mp84uTdUZ57zf-mg7N0E_GeSKsmDzLOuYtJqoGE2eBQ",
-    links: {},
-    type: "fullstack",
+      "https://res.cloudinary.com/dbeyl29fl/image/upload/v1768329372/x0iwhuhqolqwvw8296xw.png",
+    links: {
+      deployment: "https://forever-ecommerce-ns8g.onrender.com",
+    },
   },
   {
     id: 5,
-    title: "Vault CMS",
+    title: "LamaLog",
     description:
-      "A headless content management system designed for speed and developer experience.",
-    tags: ["MongoDB", "Express"],
+      "A lightweight blogging and CMS platform that enables users to create, manage, and publish blog posts through a clean, intuitive authoring experience.",
+    tags: ["React", "MongoDB", "Express"],
     imageUrl:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAIKnP0-iZXqYKNRnMS94UMMx6LyHAdlLGPFieM7jRtCz269w8E7JdGtoE4xVR4ohV1WlPwaVq7p9JPXQ3nkRnOP27aAKw7iBuEhzUMSRzkbyqmnRtcYZcBJ__bsDn3-Bpiw2iGL3gOy1G_OcYYKyw76hS_NmRS6RMsdo4MYxD8H5grOaldg-mnlbgW0y1YXcrxb0RU-y4hI7XzvypASW--Cnm88b1CFDTuD5hvL7V1L5uHyItYYoPT4zuxEfD5fnRYbtWsdNSOXA",
-    links: {},
-    type: "backend",
+      "https://res.cloudinary.com/dbeyl29fl/image/upload/v1768329378/abd1znzcrcmpu4hhfejx.png",
+    links: {
+      deployment: "https://blog-mtrs.onrender.com",
+    },
+  },
+  {
+    id: 6,
+    title: "FunLearn",
+    description:
+      "An AI-assisted, gamified learning platform that transforms uploaded documents into explanations, practice quizzes, and competitive challenges, with real-time chatrooms for collaborative group study.",
+    tags: ["MongoDB", "Next.js", "Express", "Socket.io", "AI"],
+    imageUrl:
+      "https://res.cloudinary.com/dbeyl29fl/image/upload/v1768581063/gzgkavevsc5ucg7fxsmf.png",
+    links: {
+      deployment: "https://funlearn-frontend.vercel.app",
+    },
+  },
+  {
+    id: 7,
+    title: "We-Listen",
+    description:
+      "An anonymous mental wellness platform that allows users to securely chat with verified therapists, creating a safe space for honest expression without fear of exposure or judgment.",
+    tags: ["MongoDB", "React", "Socket.io", "Express"],
+    imageUrl:
+      "https://res.cloudinary.com/dbeyl29fl/image/upload/v1768581227/w5szfl5qshhnefsvwnyq.png",
+    links: {
+      deployment: "https://we-listen.co",
+    },
+  },
+  {
+    id: 8,
+    title: "Help A Child Africa",
+    description:
+      "An NGO website designed to support humanitarian initiatives by enabling secure donations and raising awareness for projects focused on improving the lives of children across Africa.",
+    tags: ["MongoDB", "Express", "Next.js", "Paystack API"],
+    imageUrl:
+      "https://res.cloudinary.com/dbeyl29fl/image/upload/v1756125957/s1mivkwemckrcextnqan.png",
+    links: {
+      deployment: "https://help-a-child-africa.onrender.com",
+    },
   },
 ];
 

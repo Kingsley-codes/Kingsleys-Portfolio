@@ -1,3 +1,5 @@
+import { FiMail } from "react-icons/fi";
+
 export default function CTASection() {
   return (
     <div className="mt-20 p-8 rounded-2xl bg-gradient-to-br from-[#1a2220] to-background-dark border border-primary/20 relative overflow-hidden group">
@@ -17,8 +19,8 @@ export default function CTASection() {
           </p>
         </div>
         <button className="shrink-0 flex items-center justify-center gap-3 px-8 h-14 bg-primary text-white font-bold rounded-xl hover:shadow-[0_0_20px_rgba(44,155,140,0.4)] transition-all">
-          START_COLLABORATION
-          <span className="material-symbols-outlined">alternate_email</span>
+          <FiMail className="text-lg" />
+          START COLLABORATION
         </button>
       </div>
     </div>

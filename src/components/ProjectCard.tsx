@@ -1,4 +1,5 @@
 import { Project } from "@/types";
+import { FiLink } from "react-icons/fi";
 
 interface ProjectCardProps {
   project: Project;
@@ -22,7 +23,7 @@ export default function ProjectCard({
         <div className="absolute inset-0 bg-gradient-to-t from-card-dark via-transparent to-transparent opacity-60"></div>
         {project.featured && (
           <div className="absolute top-4 right-4 flex gap-2">
-            <span className="px-3 py-1 bg-primary/10 border border-primary/30 rounded-full text-[10px] font-bold text-primary uppercase tracking-wider">
+            <span className="px-3 py-1 bg-primary border border-gray-300 rounded-full text-[10px] font-bold text-gray-200 uppercase tracking-wider">
               Featured
             </span>
           </div>
@@ -55,41 +56,11 @@ export default function ProjectCard({
           {project.links.deployment && (
             <a
               className="flex items-center gap-2 text-primary font-bold text-sm group-hover:underline"
-              href="#"
+              href={project.links.deployment}
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <span className="material-symbols-outlined text-lg">link</span>
-              VIEW_DEPLOYMENT
-            </a>
-          )}
-          {project.links.source && (
-            <a
-              className="flex items-center gap-2 text-[#a2b4b2] font-bold text-sm hover:text-white"
-              href="#"
-            >
-              <span className="material-symbols-outlined text-lg">code</span>
-              SOURCE_CODE
-            </a>
-          )}
-          {project.links.explore && (
-            <a
-              className="w-fit flex items-center gap-2 text-primary font-bold text-sm"
-              href="#"
-            >
-              <span className="material-symbols-outlined text-lg">
-                arrow_outward
-              </span>
-              EXPLORE_UI
-            </a>
-          )}
-          {project.links.documentation && (
-            <a
-              className="w-fit flex items-center gap-2 text-primary font-bold text-sm"
-              href="#"
-            >
-              <span className="material-symbols-outlined text-lg">
-                terminal
-              </span>
-              DOCUMENTATION
+              <FiLink /> View Deployment
             </a>
           )}
         </div>

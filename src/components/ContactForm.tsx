@@ -33,7 +33,7 @@ export default function ContactForm() {
         <span className="text-primary font-mono text-sm tracking-widest uppercase mb-2 block">
           Available for hire
         </span>
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
+        <h1 className="text-3xl text-gray-300 md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
           Let&apos;s build something together.
         </h1>
         <p className="text-slate-500 dark:text-slate-400 max-w-md">
@@ -44,9 +44,11 @@ export default function ContactForm() {
       <form className="space-y-6" onSubmit={handleSubmit}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <label className="flex flex-col gap-2">
-            <span className="text-sm font-medium opacity-80">Full Name</span>
+            <span className="text-sm text-gray-300 font-medium opacity-80">
+              Full Name
+            </span>
             <input
-              className="w-full rounded-lg border border-slate-200 dark:border-border-dark bg-slate-50 dark:bg-background-dark/50 p-4 text-base focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:opacity-30"
+              className="w-full rounded-lg text-gray-300 bg-gray-900 border border-slate-700 dark:border-border-dark p-4 text-base focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-gray-700"
               placeholder="e.g., John Doe"
               type="text"
               name="name"
@@ -56,11 +58,11 @@ export default function ContactForm() {
             />
           </label>
           <label className="flex flex-col gap-2">
-            <span className="text-sm font-medium opacity-80">
+            <span className="text-sm text-gray-300 font-medium opacity-80">
               Email Address
             </span>
             <input
-              className="w-full rounded-lg border border-slate-200 dark:border-border-dark bg-slate-50 dark:bg-background-dark/50 p-4 text-base focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:opacity-30"
+              className="w-full rounded-lg border text-gray-300 bg-gray-900 border-slate-700 dark:border-border-dark p-4 text-base focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-gray-700"
               placeholder="name@company.com"
               type="email"
               name="email"
@@ -71,9 +73,11 @@ export default function ContactForm() {
           </label>
         </div>
         <label className="flex flex-col gap-2">
-          <span className="text-sm font-medium opacity-80">Message</span>
+          <span className="text-sm text-gray-300 font-medium opacity-80">
+            Message
+          </span>
           <textarea
-            className="w-full rounded-lg border border-slate-200 dark:border-border-dark bg-slate-50 dark:bg-background-dark/50 p-4 text-base focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:opacity-30 resize-none"
+            className="w-full text-gray-300 bg-gray-900 rounded-lg border border-slate-700 dark:border-border-dark p-4 text-base focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-gray-700 resize-none"
             placeholder="Tell me about your project..."
             rows={5}
             name="message"

@@ -2,7 +2,7 @@ import { FiMail, FiMapPin } from "react-icons/fi";
 
 export default function ContactInfo() {
   const contactInfo = {
-    email: "hello@kingsley.dev",
+    email: "agbamkingsley@gmail.com",
     location: "Lagos, Nigeria",
   };
 
@@ -18,9 +18,9 @@ export default function ContactInfo() {
               <FiMail className="text-lg" />
             </div>
             <div>
-              <p className="text-sm opacity-50 mb-1">Email</p>
+              <p className="text-sm opacity-50 text-gray-200 mb-1">Email</p>
               <a
-                className="text-lg font-medium hover:text-primary transition-colors"
+                className="text-lg font-medium text-gray-300 hover:text-primary transition-colors"
                 href={`mailto:${contactInfo.email}`}
               >
                 {contactInfo.email}
@@ -32,8 +32,12 @@ export default function ContactInfo() {
               <FiMapPin className="text-lg" />
             </div>
             <div>
-              <p className="text-sm opacity-50 mb-1">Base Location</p>
-              <p className="text-lg font-medium">{contactInfo.location}</p>
+              <p className="text-sm opacity-50 text-gray-200 mb-1">
+                Base Location
+              </p>
+              <p className="text-lg text-gray-300 font-medium">
+                {contactInfo.location}
+              </p>
             </div>
           </div>
         </div>

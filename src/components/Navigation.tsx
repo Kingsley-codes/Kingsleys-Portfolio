@@ -10,7 +10,7 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className="fixed top-0 w-full z-50 border-b border-white/5 glass-nav bg-[#0a0a0a]/95 backdrop-blur-lg">
+      <nav className="fixed top-0 w-full z-50 border-b border-white/5 glass-nav backdrop-blur-lg">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 md:h-20 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3">
             <div className="w-9 h-9 md:w-10 md:h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl md:text-2xl">

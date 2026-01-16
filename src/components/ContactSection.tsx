@@ -34,7 +34,7 @@ export default function ContactSection() {
             </a>
             <a
               className="w-14 h-14 bg-white/5 text-gray-300 hover:bg-white/10 border border-white/10 rounded-2xl flex items-center justify-center transition-all"
-              href="https://www.linkedin.com/in/kingsley-agbam/"
+              href="https://www.linkedin.com/in/kingsley-agbam"
             >
               <FiLinkedin />
             </a>
