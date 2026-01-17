@@ -227,7 +227,7 @@ export default function TechStack() {
                 <div className="h-px flex-1 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
               </div>
 
-              <div className="grid grid-cols-3 xl:grid-cols-6 gap-4 px-4">
+              <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 px-4">
                 {category.skills.map((skill, index) => (
                   <div
                     key={index}
