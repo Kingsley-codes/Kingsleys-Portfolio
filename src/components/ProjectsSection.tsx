@@ -35,9 +35,11 @@ export default function ProjectsSection() {
   return (
     <section className="max-w-6xl mx-auto px-6 py-32" id="projects">
       <div className="flex items-center justify-between mb-16 px-4">
-        <h2 className="text-4xl text-primary font-bold">Selected Projects</h2>
+        <h2 className="md:text-4xl text-2xl text-primary font-bold">
+          Selected Projects
+        </h2>
         <a
-          className="text-[#2c9b8c] font-bold flex items-center gap-2 hover:underline"
+          className="text-[#2c9b8c] text-xs md:text-base font-semibold flex items-center gap-2 hover:underline"
           href="/projects"
         >
           View All Projects <FiArrowRight className="text-sm" />
@@ -46,7 +48,10 @@ export default function ProjectsSection() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
         {projects.map((project, index) => (
-          <div key={index} className="group">
+          <div
+            key={index}
+            className="group hover:border-gray-800 rounded-2xl border md:border-0"
+          >
             <div className="relative overflow-hidden rounded-2xl bg-[#2B2B2B] aspect-video mb-6 border border-white/10">
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10 flex items-end p-8">
                 <div className="flex gap-4">
@@ -69,7 +74,7 @@ export default function ProjectsSection() {
               ></div>
             </div>
 
-            <div className="flex flex-wrap gap-2 mb-4">
+            <div className="flex px-2 flex-wrap gap-2 mb-4">
               {project.tags.map((tag, tagIndex) => (
                 <span
                   key={tagIndex}
@@ -84,10 +89,10 @@ export default function ProjectsSection() {
               ))}
             </div>
 
-            <h3 className="text-2xl font-bold text-gray-300 mb-2 group-hover:text-[#2c9b8c] transition-colors">
+            <h3 className="text-2xl px-2 font-bold text-gray-300 mb-2 group-hover:text-[#2c9b8c] transition-colors">
               {project.title}
             </h3>
-            <p className="text-slate-400 leading-relaxed">
+            <p className="text-slate-400 px-2 leading-relaxed">
               {project.description}
             </p>
           </div>

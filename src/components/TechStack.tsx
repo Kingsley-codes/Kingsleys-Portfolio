@@ -48,6 +48,7 @@ export default function TechStack() {
           name: "Vue.js",
           description: "Composition API / Pinia",
           level: "Intermediate",
+          class: "hidden",
         },
         {
           icon: <SiTypescript className="text-3xl" />,
@@ -83,18 +84,21 @@ export default function TechStack() {
           name: "Auth.js",
           description: "Authentication / OAuth",
           level: "Advanced",
+          class: "hidden",
         },
         {
           icon: <FiServer className="text-3xl" />,
           name: "Fastify",
           description: "High-performance APIs",
           level: "Intermediate",
+          class: "hidden",
         },
         {
           icon: <FiCloud className="text-3xl" />,
           name: "Serverless",
           description: "AWS Lambda / Vercel",
           level: "Intermediate",
+          class: "hidden",
         },
         {
           icon: <SiGraphql className="text-3xl" />,
@@ -136,12 +140,14 @@ export default function TechStack() {
           name: "Git & GitHub",
           description: "Version Control / CI/CD",
           level: "Advanced",
+          class: "hidden",
         },
         {
           icon: <FiTerminal className="text-3xl" />,
           name: "Docker",
           description: "Containerization",
           level: "Advanced",
+          class: "hidden",
         },
       ],
     },
@@ -153,12 +159,14 @@ export default function TechStack() {
           name: "Jest",
           description: "Unit & Integration Testing",
           level: "Advanced",
+          class: "hidden",
         },
         {
           icon: <FiTool className="text-3xl" />,
           name: "Cypress",
           description: "E2E Testing",
           level: "Intermediate",
+          class: "hidden",
         },
         {
           icon: <FaAws className="text-3xl" />,
@@ -177,6 +185,7 @@ export default function TechStack() {
           name: "Webpack / Vite",
           description: "Build Tools / Bundling",
           level: "Intermediate",
+          class: "hidden",
         },
         {
           icon: <FiTerminal className="text-3xl" />,
@@ -218,11 +227,13 @@ export default function TechStack() {
                 <div className="h-px flex-1 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 px-4">
+              <div className="grid grid-cols-3 xl:grid-cols-6 gap-4 px-4">
                 {category.skills.map((skill, index) => (
                   <div
                     key={index}
-                    className="group relative bg-[#2B2B2B] border border-white/10 p-6 rounded-xl hover:border-[#2c9b8c]/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-[#2c9b8c]/10"
+                    className={`group relative bg-[#2B2B2B] border border-white/10 p-6 rounded-xl hover:border-[#2c9b8c]/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg hover:shadow-[#2c9b8c]/10 ${
+                      skill.class || ""
+                    } sm:block`}
                   >
                     {/* Skill level indicator */}
                     <div className="absolute top-3 right-3">
@@ -261,7 +272,7 @@ export default function TechStack() {
                       {skill.icon}
                     </div>
 
-                    <h3 className="font-bold text-primary text-lg mb-2">
+                    <h3 className="font-bold text-primary text-sm md:text-lg mb-2">
                       {skill.name}
                     </h3>
                     <p className="text-xs text-slate-400 mb-3">

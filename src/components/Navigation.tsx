@@ -89,7 +89,7 @@ export default function Navigation() {
             </Link>
             <Link
               className="block text-gray-300 hover:text-[#2c9b8c] transition-colors text-lg py-3 border-b border-white/5"
-              href="#projects"
+              href="/projects"
               onClick={() => setIsMenuOpen(false)}
             >
               Projects
@@ -103,7 +103,7 @@ export default function Navigation() {
             </Link>
             <Link
               className="block text-gray-300 hover:text-[#2c9b8c] transition-colors text-lg py-3 border-b border-white/5"
-              href="#contact"
+              href="/contact"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
