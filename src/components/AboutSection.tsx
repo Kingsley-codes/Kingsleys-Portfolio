@@ -19,13 +19,16 @@ export default function AboutSection() {
 
             <div className="space-y-6 text-md text-slate-300 leading-relaxed">
               <p>
-                I&apos;m <span className="text-gradient">Kingsley Agbam</span>,
-                a full-stack web developer focused on building modern, scalable,
-                and user-centric digital products. I work primarily with React,
-                Next.js, Node.js, and Express, combining clean architecture with
-                thoughtful UI to create applications that are fast, reliable,
-                and easy to use. I enjoy turning complex ideas into simple,
-                intuitive experiences.
+                I&apos;m{" "}
+                <span className="text-gradient font-semibold">
+                  Kingsley Agbam
+                </span>
+                , a full-stack web developer focused on building modern,
+                scalable, and user-centric digital products. I work primarily
+                with React, Next.js, Node.js, and Express, combining clean
+                architecture with thoughtful UI to create applications that are
+                fast, reliable, and easy to use. I enjoy turning complex ideas
+                into simple, intuitive experiences.
               </p>
 
               <p>
