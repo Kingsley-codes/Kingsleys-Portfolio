@@ -202,7 +202,7 @@ export default function TechStack() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16 px-4">
           <div>
-            <h2 className="text-4xl text-primary font-bold mb-4">
+            <h2 className="md:text-4xl text-3xl text-primary font-bold mb-4">
               Tech Stack & Skills
             </h2>
             <p className="text-slate-400 text-lg max-w-2xl">
