@@ -1,9 +1,13 @@
+"use client";
+
 import ProjectCard from "./ProjectCard";
 import { Project } from "@/types";
+import { useRouter } from "next/navigation";
 
 const projects: Project[] = [
   {
     id: 1,
+    name: "task-gynie",
     title: "Task Gynie",
     description:
       "A mission-driven service marketplace that connects customers with trusted local professionals for everyday household needs, helping women and families reclaim time, balance responsibilities, and enjoy peace of mind.",
@@ -17,6 +21,7 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    name: "meride-haven",
     title: "Meride Haven",
     description:
       "A premium transport and hospitality brand delivering private and corporate transportation, professional chauffeur services, secure escort support, and guest coordination with a focus on safety, comfort, and trust.",
@@ -29,6 +34,7 @@ const projects: Project[] = [
   },
   {
     id: 3,
+    name: "idonatio",
     title: "iDonatio",
     description:
       "A cashless donation platform that seamlessly connects donors and donees, enabling fast, secure giving and powerful donation management through an easy-to-use web and mobile experience.",
@@ -41,6 +47,7 @@ const projects: Project[] = [
   },
   {
     id: 4,
+    name: "forever-ecommerce",
     title: "Forever E-commerce",
     description:
       "High-performance e-commerce engine with Redis caching, full-text search, and a custom-built headless CMS for content management.",
@@ -53,6 +60,7 @@ const projects: Project[] = [
   },
   {
     id: 5,
+    name: "lamalog",
     title: "LamaLog",
     description:
       "A lightweight blogging and CMS platform that enables users to create, manage, and publish blog posts through a clean, intuitive authoring experience.",
@@ -65,6 +73,7 @@ const projects: Project[] = [
   },
   {
     id: 6,
+    name: "funlearn",
     title: "FunLearn",
     description:
       "An AI-assisted, gamified learning platform that transforms uploaded documents into explanations, practice quizzes, and competitive challenges, with real-time chatrooms for collaborative group study.",
@@ -77,6 +86,7 @@ const projects: Project[] = [
   },
   {
     id: 7,
+    name: "we-listen",
     title: "We-Listen",
     description:
       "An anonymous mental wellness platform that allows users to securely chat with verified therapists, creating a safe space for honest expression without fear of exposure or judgment.",
@@ -89,6 +99,7 @@ const projects: Project[] = [
   },
   {
     id: 8,
+    name: "help-a-child-africa",
     title: "Help A Child Africa",
     description:
       "An NGO website designed to support humanitarian initiatives by enabling secure donations and raising awareness for projects focused on improving the lives of children across Africa.",
@@ -102,6 +113,12 @@ const projects: Project[] = [
 ];
 
 export default function ProjectGrid() {
+  const router = useRouter();
+
+  const handleCardClick = (projectName: string) => {
+    router.push(`/projects/${projectName}`);
+  };
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {projects.map((project) => (
@@ -109,6 +126,7 @@ export default function ProjectGrid() {
           key={project.id}
           project={project}
           isFeatured={project.featured}
+          onClick={() => handleCardClick(project.name)}
         />
       ))}
     </div>

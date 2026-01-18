@@ -4,17 +4,20 @@ import { FiLink } from "react-icons/fi";
 interface ProjectCardProps {
   project: Project;
   isFeatured?: boolean;
+  onClick?: () => void;
 }
 
 export default function ProjectCard({
   project,
   isFeatured = false,
+  onClick,
 }: ProjectCardProps) {
   return (
     <div
       className={`group relative overflow-hidden flex flex-col rounded-xl border border-[#2b3634] bg-card-dark hover:border-primary/50 transition-all duration-300 ${
         isFeatured ? "lg:col-span-2" : ""
-      }`}
+      } ${onClick ? "cursor-pointer" : ""}`}
+      onClick={onClick}
     >
       <div
         className="aspect-video w-full bg-center bg-cover relative"
