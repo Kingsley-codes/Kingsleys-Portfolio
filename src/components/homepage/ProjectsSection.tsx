@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FiLink, FiArrowRight } from "react-icons/fi";
 
 export default function ProjectsSection() {
@@ -38,12 +39,12 @@ export default function ProjectsSection() {
         <h2 className="md:text-4xl text-2xl text-primary font-bold">
           Selected Projects
         </h2>
-        <a
+        <Link
           className="text-[#2c9b8c] text-xs md:text-base font-semibold flex items-center gap-2 hover:underline"
           href="/projects"
         >
           View All Projects <FiArrowRight className="text-sm" />
-        </a>
+        </Link>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">

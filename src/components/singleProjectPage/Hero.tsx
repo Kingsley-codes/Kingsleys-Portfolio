@@ -1,4 +1,5 @@
 import type { Project } from "@/data/projects";
+import Image from "next/image";
 
 type HeroProps = {
   project: Project;
@@ -9,7 +10,7 @@ export default function Hero({ project }: HeroProps) {
     <section className="relative w-full h-[70vh] flex items-end overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           alt={project.title}
           className="w-full h-full object-cover grayscale opacity-40"
           src={project.heroImage}
