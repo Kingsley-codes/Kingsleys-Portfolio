@@ -1,11 +1,11 @@
 "use client";
 
-import HeroSection from "@/components/HeroSection";
-import TechStack from "@/components/TechStack";
-import ProjectsSection from "@/components/ProjectsSection";
-import ContactSection from "@/components/ContactSection";
-import AboutSection from "@/components/AboutSection";
-import StatsSection from "@/components/StatsSection";
+import HeroSection from "@/components/homepage/HeroSection";
+import TechStack from "@/components/homepage/TechStack";
+import ProjectsSection from "@/components/homepage/ProjectsSection";
+import ContactSection from "@/components/homepage/ContactSection";
+import AboutSection from "@/components/homepage/AboutSection";
+import StatsSection from "@/components/homepage/StatsSection";
 
 export default function Home() {
   return (

@@ -1,7 +1,7 @@
-import BioSection from "@/components/BioSection";
-import Timeline from "@/components/Timeline";
-import SkillsGrid from "@/components/SkillsGrid";
-import AboutProfile from "@/components/AboutProfile";
+import BioSection from "@/components/aboutPage/BioSection";
+import Timeline from "@/components/aboutPage/Timeline";
+import SkillsGrid from "@/components/aboutPage/SkillsGrid";
+import AboutProfile from "@/components/aboutPage/AboutProfile";
 
 export default function AboutPage() {
   return (

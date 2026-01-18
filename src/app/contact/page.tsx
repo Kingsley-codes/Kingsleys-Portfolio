@@ -1,7 +1,7 @@
-import ContactForm from "@/components/ContactForm";
-import ContactInfo from "@/components/ContactInfo";
-import SocialLinks from "@/components/SocialLinks";
-import VisualAccent from "@/components/VisualAccent";
+import ContactForm from "@/components/contactPage/ContactForm";
+import ContactInfo from "@/components/contactPage/ContactInfo";
+import SocialLinks from "@/components/contactPage/SocialLinks";
+import VisualAccent from "@/components/contactPage/VisualAccent";
 
 export default function ContactPage() {
   return (

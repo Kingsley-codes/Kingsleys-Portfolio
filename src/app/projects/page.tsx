@@ -1,7 +1,7 @@
-import PageHeading from "@/components/PageHeading";
-import FilterBar from "@/components/FilterBar";
-import ProjectGrid from "@/components/ProjectGrid";
-import CTASection from "@/components/CTASection";
+import PageHeading from "@/components/projectsPage/PageHeading";
+import FilterBar from "@/components/projectsPage/FilterBar";
+import ProjectGrid from "@/components/projectsPage/ProjectGrid";
+import CTASection from "@/components/projectsPage/CTASection";
 
 export default function Home() {
   return (
