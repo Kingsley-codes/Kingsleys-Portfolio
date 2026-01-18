@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { FiLink, FiArrowRight } from "react-icons/fi";
+import { FiLink, FiArrowRight, FiEye } from "react-icons/fi";
 
 export default function ProjectsSection() {
   const projects = [
     {
       title: "Meride Haven",
+      name: "meride-haven",
       description:
         "A premium transport and hospitality brand delivering private and corporate transportation, professional chauffeur services, secure escort support, and guest coordination with a focus on safety, comfort, and trust.",
       tags: ["Next.js", "Express.js", "MongoDB", "Ercas API"],
@@ -12,9 +13,9 @@ export default function ProjectsSection() {
         "https://res.cloudinary.com/dbeyl29fl/image/upload/v1768329379/itplrm6l3v9gmmrgyddg.png",
       url: "https://meride-haven.com/",
     },
-
     {
       title: "iDonatio",
+      name: "idonatio",
       description:
         "A cashless donation platform that seamlessly connects donors and donees, enabling fast, secure giving and powerful donation management through an easy-to-use web and mobile experience.",
       tags: ["Express", "Next.js", "MongoDB", "Paystack API"],
@@ -24,6 +25,7 @@ export default function ProjectsSection() {
     },
     {
       title: "Task Gynie",
+      name: "task-gynie",
       description:
         "A mission-driven service marketplace that connects customers with trusted local professionals for everyday household needs, helping women and families reclaim time, balance responsibilities, and enjoy peace of mind.",
       tags: ["Express", "Next.js", "MongoDB", "Paystack API"],
@@ -61,10 +63,21 @@ export default function ProjectsSection() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <button className="bg-[#2c9b8c] text-white p-3 rounded-lg flex items-center justify-center">
+                    <button
+                      className="bg-[#2c9b8c] text-white p-3 rounded-lg flex items-center justify-center hover:bg-[#2c9b8c]/90 transition-colors"
+                      title="Visit Live Site"
+                    >
                       <FiLink />
                     </button>
                   </a>
+                  <Link href={`/projects/${project.name}`}>
+                    <button
+                      className="bg-white/10 backdrop-blur-sm text-white p-3 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors"
+                      title="View Details"
+                    >
+                      <FiEye />
+                    </button>
+                  </Link>
                 </div>
               </div>
               <div
@@ -93,7 +106,7 @@ export default function ProjectsSection() {
             <h3 className="text-2xl px-2 font-bold text-gray-300 mb-2 group-hover:text-[#2c9b8c] transition-colors">
               {project.title}
             </h3>
-            <p className="text-slate-400 px-2 leading-relaxed">
+            <p className="text-slate-400 px-2 leading-relaxed mb-4">
               {project.description}
             </p>
           </div>

@@ -7,41 +7,55 @@ type HeroProps = {
 
 export default function Hero({ project }: HeroProps) {
   return (
-    <section className="relative w-full h-[70vh] flex items-end overflow-hidden">
-      {/* Background */}
+    <section className="relative w-full h-[105vh] flex items-end overflow-hidden">
+      {/* Background with gradient overlay */}
       <div className="absolute inset-0 z-0">
         <Image
           alt={project.title}
-          className="w-full h-full object-cover grayscale opacity-40"
+          fill
+          className="object-cover"
           src={project.heroImage}
+          sizes="100vw"
         />
-        <div className="absolute inset-0 bg-primary/10 mix-blend-multiply" />
-        <div className="absolute inset-0 gradient-overlay" />
+        {/* Stronger right-to-left gradient */}
+        <div
+          className="absolute inset-0 bg-gradient-to-l from-transparent via-black/70 to-black/95"
+          style={{
+            background:
+              "linear-gradient(to left, transparent 0%, rgba(0,0,0,0.7) 20%, rgba(0,0,0,0.98) 100%)",
+          }}
+        />
+        {/* Additional dark overlay on left side */}
+        <div className="absolute left-0 inset-y-0 w-2/5 bg-gradient-to-r from-black/90 to-transparent" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 pb-20 w-full">
-        {/* Tech Stack */}
-        <div className="flex flex-wrap gap-2 mb-6">
-          {project.techStack.map((tech) => (
-            <span
-              key={tech}
-              className="px-3 py-1 rounded-full bg-primary/20 border border-primary/30 text-primary text-xs font-bold uppercase tracking-widest"
-            >
-              {tech}
-            </span>
-          ))}
+      {/* Content - positioned on left side */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 pb-20">
+        <div className="flex justify-start">
+          <div className="w-full md:w-1/2 lg:w-2/5">
+            {/* Tech Stack */}
+            <div className="flex flex-wrap ml-1 lg:ml-16 gap-2 mb-6">
+              {project.techStack.map((tech) => (
+                <span
+                  key={tech}
+                  className="px-3 py-1 rounded-full bg-primary/20 border border-primary/30 text-primary text-xs font-bold uppercase tracking-widest"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+
+            {/* Title with text shadow */}
+            <h1 className="text-3xl ml-1 lg:ml-16 md:text-4xl lg:text-5xl text-white font-bold mb-6 tracking-tighter drop-shadow-lg">
+              {project.title}
+            </h1>
+
+            {/* Subtitle */}
+            <p className="text-md ml-1 lg:ml-16 md:text-lg text-gray-300 font-light leading-relaxed drop-shadow-md">
+              {project.subtitle}
+            </p>
+          </div>
         </div>
-
-        {/* Title */}
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tighter">
-          {project.title}
-        </h1>
-
-        {/* Subtitle */}
-        <p className="text-xl text-slate-400 max-w-2xl font-light leading-relaxed">
-          {project.subtitle}
-        </p>
       </div>
     </section>
   );

@@ -10,7 +10,7 @@ type Props = {
 export default function ResultsSection({ data }: Props) {
   return (
     <section id="results">
-      <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
+      <h2 className="text-3xl text-gray-300 font-bold mb-8 flex items-center gap-3">
         <span className="text-primary tracking-widest font-light">04.</span>{" "}
         Results & Impact
       </h2>
@@ -19,7 +19,7 @@ export default function ResultsSection({ data }: Props) {
         {data.map((result, index) => (
           <div
             key={index}
-            className="p-6 rounded-xl bg-primary/5 border border-primary/20"
+            className="p-6 rounded-xl bg-primary/5 border border-primary"
           >
             <div className="text-3xl font-bold text-primary mb-2">
               {result.value}

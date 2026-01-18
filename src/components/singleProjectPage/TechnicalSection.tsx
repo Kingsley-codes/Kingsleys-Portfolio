@@ -16,7 +16,7 @@ export default function TechnicalSection() {
 
   return (
     <section id="technical">
-      <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
+      <h2 className="text-3xl text-gray-300 font-bold mb-8 flex items-center gap-3">
         <span className="text-primary tracking-widest font-light">03.</span>{" "}
         Technical Implementation
       </h2>
@@ -35,7 +35,7 @@ export default function TechnicalSection() {
 
         {/* Architecture Diagram Simulation */}
         <div className="border border-white/10 rounded-xl p-8 bg-surface-dark/50">
-          <h3 className="text-lg font-bold mb-10 text-center">
+          <h3 className="text-lg text-gray-300 font-bold mb-10 text-center">
             System Architecture
           </h3>
           <div className="flex flex-col md:flex-row items-center justify-between gap-8 relative">
@@ -62,7 +62,7 @@ export default function TechnicalSection() {
                 <FiDatabase className="text-white/50 text-2xl" />
               </div>
               <span className="text-xs font-bold uppercase text-slate-500">
-                PostgreSQL
+                MongoDB
               </span>
             </div>
           </div>

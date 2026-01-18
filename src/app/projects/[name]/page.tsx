@@ -10,6 +10,7 @@ import Hero from "@/components/singleProjectPage/Hero";
 import SolutionSection from "@/components/singleProjectPage/SolutionSection";
 import ProjectSidebar from "@/components/singleProjectPage/ProjectSidebar";
 import TechnicalSection from "@/components/singleProjectPage/TechnicalSection";
+import Link from "next/link";
 
 type PageProps = {
   params: Promise<{
@@ -32,6 +33,11 @@ export default async function ProjectPage({ params }: PageProps) {
     notFound();
   }
 
+  const links = {
+    live: project.links?.live ?? null,
+    source: project.links?.source ?? null,
+  };
+
   return (
     <>
       <main className="pt-20">
@@ -51,11 +57,11 @@ export default async function ProjectPage({ params }: PageProps) {
         <div className="max-w-5xl mx-auto px-6 pb-32">
           {/* Breadcrumbs */}
           <div className="flex items-center gap-2 py-10 text-slate-500 text-sm">
-            <a className="hover:text-primary transition-colors" href="#">
-              Portfolio
-            </a>
+            <Link className="hover:text-primary transition-colors" href="#">
+              Projects
+            </Link>
             <FiChevronRight className="text-xs" />
-            <span className="text-slate-300">NexTask Case Study</span>
+            <span className="text-slate-300">{project.title} Case Study</span>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
@@ -73,7 +79,7 @@ export default async function ProjectPage({ params }: PageProps) {
         </div>
       </main>
 
-      <FloatingCTA />
+      <FloatingCTA links={links} />
     </>
   );
 }

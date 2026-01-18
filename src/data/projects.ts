@@ -152,7 +152,7 @@ export const projects: Project[] = [
     meta: {
       role: "Lead Full-Stack Developer",
       duration: "4 Months (2023)",
-      team: "Agbam Kingsley + 1 Designer",
+      team: "Agbam Kingsley (Solo)",
     },
   },
 
@@ -236,7 +236,7 @@ export const projects: Project[] = [
     meta: {
       role: "Full-Stack Engineer",
       duration: "4 Months (2024)",
-      team: "Agbam Kingsley + 1 Contributor",
+      team: "Agbam Kingsley (Solo)",
     },
   },
 
@@ -319,7 +319,7 @@ export const projects: Project[] = [
     meta: {
       role: "Full-Stack Developer",
       duration: "3 Months (2024)",
-      team: "Agbam Kingsley + 1 Therapist Advisor",
+      team: "Agbam Kingsley (Solo)",
     },
   },
 

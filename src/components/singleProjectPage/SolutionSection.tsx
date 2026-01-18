@@ -12,7 +12,7 @@ type Props = {
 export default function SolutionSection({ data }: Props) {
   return (
     <section id="solution">
-      <h2 className="text-3xl font-bold mb-8 flex items-center gap-3">
+      <h2 className="text-3xl text-gray-300 font-bold mb-8 flex items-center gap-3">
         <span className="text-primary tracking-widest font-light">02.</span> The
         Solution
       </h2>

@@ -22,7 +22,9 @@ export default function ProjectSidebar({ meta, links }: Props) {
       <div className="sticky top-32 space-y-8">
         {/* Project Access */}
         <div className="p-8 bg-surface-dark rounded-2xl border border-white/5 shadow-2xl">
-          <h3 className="text-lg font-bold mb-6">Project Access</h3>
+          <h3 className="text-lg text-gray-300 font-bold mb-6">
+            Project Access
+          </h3>
           <div className="space-y-4">
             {links.live && (
               <a
