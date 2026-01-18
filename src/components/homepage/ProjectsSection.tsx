@@ -51,9 +51,9 @@ export default function ProjectsSection() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="group hover:border-gray-800 rounded-2xl border md:border-0"
+            className="group hover:border-gray-700 rounded-2xl border border-white/10 md:border-0"
           >
-            <div className="relative overflow-hidden rounded-2xl bg-[#2B2B2B] aspect-video mb-6 border border-white/10">
+            <div className="relative overflow-hidden rounded-t-2xl bg-[#2B2B2B] aspect-video mb-6">
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10 flex items-end p-8">
                 <div className="flex gap-4">
                   <a

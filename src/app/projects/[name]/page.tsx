@@ -12,9 +12,9 @@ import ProjectSidebar from "@/components/singleProjectPage/ProjectSidebar";
 import TechnicalSection from "@/components/singleProjectPage/TechnicalSection";
 
 type PageProps = {
-  params: {
+  params: Promise<{
     name: string;
-  };
+  }>;
 };
 
 export function generateStaticParams() {
@@ -23,8 +23,10 @@ export function generateStaticParams() {
   }));
 }
 
-export default function ProjectPage({ params }: PageProps) {
-  const project = projects.find((p) => p.name === params.name);
+export default async function ProjectPage({ params }: PageProps) {
+  const { name } = await params;
+
+  const project = projects.find((p) => p.name === name);
 
   if (!project) {
     notFound();
