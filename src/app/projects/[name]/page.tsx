@@ -45,19 +45,30 @@ export default async function ProjectPage({ params }: PageProps) {
 
         {/* Mobile Project Links */}
         <div className="max-w-5xl mx-auto px-6 py-8 flex gap-4 md:hidden">
-          <button className="flex-1 bg-primary text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2">
+          <a
+            href={project.links.live}
+            className="flex-1 bg-primary text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2"
+          >
             <FaRocket /> Live Site
-          </button>
-          <button className="flex-1 bg-surface-dark border border-white/10 text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2">
-            <FaCode /> Source
-          </button>
+          </a>
+          {links.source && (
+            <a
+              href={project.links.source}
+              className="flex-1 bg-surface-dark border border-white/10 text-white py-3 rounded-lg font-bold flex items-center justify-center gap-2"
+            >
+              <FaCode /> Source
+            </a>
+          )}
         </div>
 
         {/* Content Container */}
         <div className="max-w-5xl mx-auto px-6 pb-32">
           {/* Breadcrumbs */}
-          <div className="flex items-center gap-2 py-10 text-slate-500 text-sm">
-            <Link className="hover:text-primary transition-colors" href="#">
+          <div className="flex items-center text-slate-400 gap-2 py-10 text-sm">
+            <Link
+              className="hover:text-second-primary transition-colors"
+              href="/projects"
+            >
               Projects
             </Link>
             <FiChevronRight className="text-xs" />
