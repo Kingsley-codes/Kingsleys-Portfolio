@@ -60,6 +60,19 @@ const projects: Project[] = [
   },
   {
     id: 5,
+    name: "drivenest",
+    title: "Drivenest",
+    description:
+      "A modern car marketplace platform for buying and renting both luxury and everyday vehicles, offering wide brand coverage and flexible ownership options.",
+    tags: ["Next.js", "Express.js", "MongoDB", "Paystack API"],
+    imageUrl:
+      "https://res.cloudinary.com/dbeyl29fl/image/upload/v1768822788/djhto5uv0456dba32jli.png",
+    links: {
+      deployment: "https://drivenest-se33.onrender.com",
+    },
+  },
+  {
+    id: 6,
     name: "lamalog",
     title: "LamaLog",
     description:
@@ -72,7 +85,7 @@ const projects: Project[] = [
     },
   },
   {
-    id: 6,
+    id: 7,
     name: "funlearn",
     title: "FunLearn",
     description:
@@ -85,7 +98,7 @@ const projects: Project[] = [
     },
   },
   {
-    id: 7,
+    id: 8,
     name: "we-listen",
     title: "We-Listen",
     description:
@@ -98,7 +111,7 @@ const projects: Project[] = [
     },
   },
   {
-    id: 8,
+    id: 9,
     name: "help-a-child-africa",
     title: "Help A Child Africa",
     description:
