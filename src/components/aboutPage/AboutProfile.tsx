@@ -9,7 +9,7 @@ export default function AboutProfile({
   name = "Agbam Kingsley Emeka",
   title = "Architecting the Modern Web",
   description = "Full-stack web developer specializing in high-performance applications with React, Next.js, and Node.js. I transform complex problems into elegant, scalable digital experiences.",
-  imageUrl = "https://lh3.googleusercontent.com/aida-public/AB6AXuBUiUBycmnsu9VTWX_l6r0LXKm_2bf8i5C7r1VIMfcSEz-lh5hzlYfgWJ-lFSX92gye0AUx8ODTFGSrfr-Hm26p0pbtbUynwqyuWN7R91i7LeyI68nDlWMx6X9XOe95BM4aPhVMJdSbzKWbkmgFVhCyZ8Qo1bi0iNPYNpfsyVuRVa6DpaADcLGD6QhQZAGeXikDkAjayQ3kz3k2LW3Ge-f8Dr-e5GK9tTrVkCTjPX49gF10-YRhQuwu4OzeU4RE2gRkzWRmaNVLUw",
+  imageUrl = "https://res.cloudinary.com/dbeyl29fl/image/upload/v1769604748/k5yzbaza1zee88mgquab.jpg",
 }: AboutProfileProps) {
   return (
     <section className="flex flex-col items-center text-center px-4 sm:px-6 mt-16 sm:mt-20 mb-20 sm:mb-24">
