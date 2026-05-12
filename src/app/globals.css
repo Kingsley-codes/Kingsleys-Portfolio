@@ -7,6 +7,7 @@
     --accent-gold: #e9c46a;
     --background-light: #fafafa;
     --background-dark: #1a1a1a;
+    --background-lighter: #252525;
     --card-dark: #2b2b2b;
   }
 
@@ -35,6 +36,10 @@
 @layer utilities {
   .bg-background-dark {
     background-color: var(--background-dark);
+  }
+
+  .bg-background-lighter {
+    background-color: var(--background-lighter);
   }
 
   .bg-card-dark {

@@ -93,7 +93,7 @@ export default function Timeline() {
               <h3 className="font-bold text-lg md:text-lg text-gray-300 mb-0.5">
                 {milestone.title}
               </h3>
-              <p className="text-gray-400 text-sm font-medium mb-2 md:mb-3">
+              <p className="text-primary text-sm font-medium mb-2 md:mb-3">
                 {milestone.company}
               </p>
               <p className="text-sm md:text-sm text-slate-400 leading-relaxed">

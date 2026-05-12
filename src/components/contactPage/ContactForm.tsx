@@ -48,7 +48,7 @@ export default function ContactForm() {
               Full Name
             </span>
             <input
-              className="w-full rounded-lg text-gray-300 bg-transparent active:bg-slate-700 border border-slate-700 dark:border-border-dark p-4 text-base focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-gray-700"
+              className="w-full rounded-lg text-gray-300 bg-transparent focus:bg-background-lighter border border-slate-700 dark:border-border-dark p-4 text-base focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-gray-700"
               placeholder="e.g., John Doe"
               type="text"
               name="name"
@@ -62,7 +62,7 @@ export default function ContactForm() {
               Email Address
             </span>
             <input
-              className="w-full rounded-lg border text-gray-300 bg-transparent active:bg-slate-700 border-slate-700 dark:border-border-dark p-4 text-base focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-gray-700"
+              className="w-full rounded-lg border text-gray-300 bg-transparent focus:bg-background-lighter border-slate-700 dark:border-border-dark p-4 text-base focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-gray-700"
               placeholder="name@company.com"
               type="email"
               name="email"
@@ -77,7 +77,7 @@ export default function ContactForm() {
             Message
           </span>
           <textarea
-            className="w-full text-gray-300 bg-transparent active:bg-slate-700 rounded-lg border border-slate-700 dark:border-border-dark p-4 text-base focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-gray-700 resize-none"
+            className="w-full text-gray-300 bg-transparent focus:bg-background-lighter rounded-lg border border-slate-700 dark:border-border-dark p-4 text-base focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all placeholder:text-gray-700 resize-none"
             placeholder="Tell me about your project..."
             rows={5}
             name="message"

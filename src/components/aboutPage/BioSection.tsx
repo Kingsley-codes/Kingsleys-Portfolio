@@ -10,29 +10,49 @@ export default function BioSection() {
         </h2>
         <div className="h-1 w-32 md:w-42 bg-primary mb-6" />
         <p className="text-slate-400 leading-relaxed text-sm md:text-sm">
-          Based in Nigeria, working globally. My philosophy centers on clean
-          code, semantic accessibility, and visual harmony.
+          Based in Nigeria, building for the world. My philosophy is simple —
+          write clean, purposeful code that solves real human problems.
         </p>
       </div>
       <div className="md:col-span-8 space-y-5 md:space-y-6 text-slate-300">
         <p className="text-base md:text-lg leading-relaxed md:leading-normal">
-          I started my journey with a deep curiosity for how the internet
-          connects people. This curiosity evolved into a professional mission to
-          build tools that are not only functional but delightful to use.
+          My journey into tech didn&apos;t start at a desk — it started in a
+          classroom. After completing my studies, my first role was as a{" "}
+          <span className="text-gradient font-semibold">
+            Computer Science Instructor
+          </span>{" "}
+          at ADEM Group of Schools, where I taught foundational computing and
+          led students through live projects. Teaching forced me to understand
+          things deeply, and that discipline became the foundation of everything
+          I&apos;ve built since.
         </p>
         <p className="text-base md:text-lg leading-relaxed md:leading-normal">
-          Over the years, I&apos;ve mastered the{" "}
-          <span className="text-gradient font-semibold">MERN stack</span> and
-          specialized in{" "}
-          <span className="text-gradient font-semibold">Next.js</span>,
-          embracing the shift towards server-side rendering and edge computing.
-          I believe that a developer&apos;s job isn&apos;t just to write code,
-          but to solve human problems through technology.
+          From there, I transitioned into industry as a{" "}
+          <span className="text-gradient font-semibold">
+            Fullstack Developer
+          </span>{" "}
+          at CrownFM, where I got my hands dirty with authentication systems,
+          role-based access control, and the kind of backend plumbing that keeps
+          real products running. That experience sharpened my instinct for
+          reliability and clean architecture.
         </p>
         <p className="text-base md:text-lg leading-relaxed md:leading-normal">
-          When I&apos;m not in front of a screen, you&apos;ll find me exploring
-          the latest in UI design trends or contributing to open-source projects
-          that lower the barrier for new developers entering the field.
+          Over the next few years, I grew into a focused{" "}
+          <span className="text-gradient font-semibold">Backend Engineer</span>{" "}
+          — building payment flows and vendor systems at Proattire, shipping
+          client products at Skilled Crow, and contributing to an{" "}
+          <span className="text-gradient font-semibold">
+            AI-powered regulatory intelligence platform
+          </span>{" "}
+          at Emerj, where I integrated LLMs and built scraping pipelines for
+          real-time policy monitoring.
+        </p>
+        <p className="text-base md:text-lg leading-relaxed md:leading-normal">
+          Today at <span className="text-gradient font-semibold">Enforca</span>,
+          I architect and maintain backend services across five distinct
+          products — from ride-matching and donation platforms to micro-task
+          systems and an Edu-tech mentorship platform. Four years in, the
+          curiosity that started in a classroom is still what drives me forward.
         </p>
       </div>
     </div>
