@@ -31,7 +31,7 @@ export default function HeroSection() {
               </button>
             </Link>
             <a
-              href="/AGBAM_KINGSLEY_fullstack_CV.pdf"
+              href="/Agbam_Kingsley_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download
