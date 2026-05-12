@@ -1,27 +1,52 @@
 interface Milestone {
   year: string;
   title: string;
+  company: string;
   description: string;
 }
 
 const milestones: Milestone[] = [
   {
-    year: "2023 - Present",
-    title: "Senior Full-Stack Engineer",
+    year: "June 2025 - Present",
+    title: "Backend Engineer",
+    company: "Enforca",
     description:
-      "Specializing in Next.js 14 and Enterprise Node.js architectures.",
+      "Building and maintaining backend services for five products — Meride-Haven (ride-matching), Idonatio (donation management), AltBucks (micro-task platform), Taskgynie (home services), and Enforca Sandbox (Edu-tech). Core work includes booking logic, payment flows, webhook handling, and background task processing.",
   },
   {
-    year: "2021 - 2023",
-    title: "Frontend Specialist",
+    year: "Sept 2025 - Jan 2026",
+    title: "Backend Engineer",
+    company: "Emerj",
     description:
-      "Led the development of complex React dashboards and design systems.",
+      "Contributed to an enterprise AI-powered regulatory intelligence platform (Legal Watch Dog) using Node.js and Express. Built web scraping pipelines, LLM integrations for summarizing regulatory changes, and standardized OpenAPI (Swagger) documentation across backend modules.",
   },
   {
-    year: "2019 - 2021",
-    title: "University Graduate",
+    year: "Oct 2024 - June 2025",
+    title: "Full-Stack Software Engineer",
+    company: "Skilled Crow (Dev Studio)",
     description:
-      "Completed Computer Science degree with a focus on Software Engineering.",
+      "Designed and built full-stack web applications for clients including Declutah, a thrift listing marketplace. Developed frontend interfaces with Tailwind CSS and backend services with Node.js and Express, collaborating closely with designers and product stakeholders.",
+  },
+  {
+    year: "June 2023 - Sept 2024",
+    title: "Backend Engineer",
+    company: "Proattire Technology",
+    description:
+      "Built and maintained backend services connecting customers, dressmakers, and vendors for bespoke clothing. Implemented authentication, role-based permissions, vendor onboarding, order and payment flows, webhook processing, and database query optimizations.",
+  },
+  {
+    year: "Sept 2022 - Nov 2023",
+    title: "Fullstack Developer",
+    company: "CrownFM",
+    description:
+      "Maintained and improved CrownFM's digital platforms. Implemented authentication flows, role-based access control, backend data workflows, system integrations, and provided technical support for day-to-day operations.",
+  },
+  {
+    year: "Jan 2022 - July 2022",
+    title: "Computer Science Instructor",
+    company: "ADEM Group of Schools",
+    description:
+      "Taught foundational computing concepts and practical digital skills. Led students through live projects, delivered hands-on lessons with real-life examples, and collaborated with school staff to align lesson plans with academic goals.",
   },
 ];
 
@@ -65,25 +90,15 @@ export default function Timeline() {
               <span className="text-primary font-bold md:hidden text-sm block mb-2">
                 {milestone.year}
               </span>
-              <h3 className="font-bold text-lg md:text-lg text-gray-300 mb-1 md:mb-2">
+              <h3 className="font-bold text-lg md:text-lg text-gray-300 mb-0.5">
                 {milestone.title}
               </h3>
+              <p className="text-primary/80 text-sm font-medium mb-2 md:mb-3">
+                {milestone.company}
+              </p>
               <p className="text-sm md:text-sm text-slate-400 leading-relaxed">
                 {milestone.description}
               </p>
-            </div>
-
-            {/* Year - Mobile alternative position (right side) */}
-            <div className="hidden">
-              <div
-                className={`md:hidden mt-2 ${
-                  index % 2 === 0 ? "text-left" : "text-right"
-                }`}
-              >
-                <span className="text-primary font-bold text-sm">
-                  {milestone.year}
-                </span>
-              </div>
             </div>
           </div>
         ))}
