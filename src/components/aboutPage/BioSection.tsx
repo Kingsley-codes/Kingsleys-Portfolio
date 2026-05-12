@@ -54,6 +54,15 @@ export default function BioSection() {
           systems and an Edu-tech mentorship platform. Four years in, the
           curiosity that started in a classroom is still what drives me forward.
         </p>
+        <p className="text-base md:text-lg leading-relaxed md:leading-normal">
+          Away from the terminal, I&apos;m probably deep in an anime arc,
+          grinding ranked on PC, or losing track of time in an open-world game
+          on my phone. I have a soft spot for{" "}
+          <span className="text-gradient font-semibold">superhero movies</span>{" "}
+          — there&apos;s something about watching an ordinary person figure out
+          how to carry an extraordinary responsibility that never gets old.
+          Honestly, it&apos;s not that different from shipping a product at 2am.
+        </p>
       </div>
     </div>
   );
