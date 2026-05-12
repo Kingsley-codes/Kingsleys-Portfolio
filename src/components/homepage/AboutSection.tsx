@@ -31,21 +31,64 @@ export default function AboutSection() {
                 into simple, intuitive experiences.
               </p>
 
-              <p>
-                Over the years, I&apos;ve built platforms ranging from content
-                management systems and e-commerce solutions to real-time
-                applications, AI-powered learning tools, and purpose-driven
-                products for startups and organizations. I care deeply about
-                performance, maintainability, and writing code that grows well
-                as products evolve.
+              <p className="text-base md:text-lg leading-relaxed md:leading-normal">
+                My journey into tech didn&apos;t start at a desk — it started in
+                a classroom. After completing my studies, my first role was as a{" "}
+                <span className="text-gradient font-semibold">
+                  Computer Science Instructor
+                </span>{" "}
+                at ADEM Group of Schools, where I taught foundational computing
+                and led students through live projects. Teaching forced me to
+                understand things deeply, and that discipline became the
+                foundation of everything I&apos;ve built since.
               </p>
 
-              <p>
-                Beyond the code, I value clarity, collaboration, and continuous
-                learning. Whether I&apos;m building a product from scratch or
-                improving an existing system, my goal is always the same:
-                deliver solutions that solve real problems and create lasting
-                value.
+              <p className="text-base md:text-lg leading-relaxed md:leading-normal">
+                From there, I transitioned into industry as a{" "}
+                <span className="text-gradient font-semibold">
+                  Fullstack Developer
+                </span>{" "}
+                at CrownFM, where I got my hands dirty with authentication
+                systems, role-based access control, and the kind of backend
+                plumbing that keeps real products running. That experience
+                sharpened my instinct for reliability and clean architecture.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed md:leading-normal">
+                Over the next few years, I grew into a focused{" "}
+                <span className="text-gradient font-semibold">
+                  Backend Engineer
+                </span>{" "}
+                — building payment flows and vendor systems at Proattire,
+                shipping client products at Skilled Crow, and contributing to an{" "}
+                <span className="text-gradient font-semibold">
+                  AI-powered regulatory intelligence platform
+                </span>{" "}
+                at Emerj, where I integrated LLMs and built scraping pipelines
+                for real-time policy monitoring.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed md:leading-normal">
+                Today at{" "}
+                <span className="text-gradient font-semibold">Enforca</span>, I
+                architect and maintain backend services across five distinct
+                products — from ride-matching and donation platforms to
+                micro-task systems and an Edu-tech mentorship platform. Four
+                years in, the curiosity that started in a classroom is still
+                what drives me forward.
+              </p>
+
+              <p className="text-base md:text-lg leading-relaxed md:leading-normal">
+                Away from the terminal, I&apos;m probably deep in an anime arc,
+                grinding ranked on PC, or losing track of time in an open-world
+                game on my phone. I have a soft spot for{" "}
+                <span className="text-gradient font-semibold">
+                  superhero movies
+                </span>{" "}
+                — there&apos;s something about watching an ordinary person
+                figure out how to carry an extraordinary responsibility that
+                never gets old. Honestly, it&apos;s not that different from
+                shipping a product at 2am.
               </p>
             </div>
           </div>
